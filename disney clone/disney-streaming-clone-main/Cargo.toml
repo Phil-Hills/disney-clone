@@ -1,0 +1,17 @@
+[package]
+name = "disney-streaming-clone"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.5", features = ["blocking", "json"] }
+serde_json = "1.0.68"
+smallvec = "1.7.0"
+tracing = "0.1.29"
+
+[dependencies.widget-cruncher]
+git = "https://github.com/nwpistols/druid.git"
+rev = "6d4ed2da6821ff698e617d23da8951dd557a4065"
+version = "0.7.0"
